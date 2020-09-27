@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
-        <module name="provider" />
         <module name="commons" />
+        <module name="provider" />
         <module name="eureka" />
       </profile>
     </annotationProcessing>
