@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.ws.rs.GET;
+import java.util.Date;
 
 /**
  * @author ： tqq
@@ -22,6 +23,7 @@ public class HelloController {
     }
     @GetMapping("/hello2")
     public String hello2(String name){
+        System.out.println(new Date()+">>>"+name);
         return "hello"+name;
     }
     @PostMapping("/user1")
