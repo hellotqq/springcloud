@@ -1,11 +1,14 @@
 package com.tqq.provider;
 
+import com.tqq.api.IUserService;
 import com.tqq.commoms.User;
 import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.ws.rs.GET;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Date;
 
 /**
@@ -14,14 +17,14 @@ import java.util.Date;
  * @Description:
  */
 @RestController
-public class HelloController {
+public class HelloController implements IUserService {
     @Value("${server.port}")
     Integer port;
-    @GetMapping("/hello")
+    @Override
     public String hello(){
         return "hello tqq:"+port;
     }
-    @GetMapping("/hello2")
+    @Override
     public String hello2(String name){
         System.out.println(new Date()+">>>"+name);
         return "hello"+name;
@@ -30,7 +33,7 @@ public class HelloController {
     public User addUser1(User user){
         return  user;
     }
-    @PostMapping("/user2")
+    @Override
     public User addUser2(@RequestBody  User user){
         return  user;
     }
@@ -46,8 +49,12 @@ public class HelloController {
     public void deleteUser1(Integer id){
         System.out.println(id);
     }
-    @DeleteMapping("/user2/{id}")
-    public void deleteUser12(@PathVariable Integer id){
+    @Override
+    public void deleteUser2(@PathVariable Integer id){
         System.out.println(id);
+    }
+    @Override
+    public void getUserByName(@RequestHeader("name") String name) throws UnsupportedEncodingException {
+        System.out.println(URLDecoder.decode(name,"UTF-8"));
     }
 }

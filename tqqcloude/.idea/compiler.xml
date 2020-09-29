@@ -7,14 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consul-provider" />
+        <module name="openfreign1" />
         <module name="commons" />
         <module name="provider" />
+        <module name="gateway" />
         <module name="eureka" />
         <module name="hystrix" />
         <module name="consul-consumer" />
+        <module name="resilience4j" />
+        <module name="zuul" />
         <module name="consumer" />
+        <module name="hello-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="openfeign" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -22,8 +30,12 @@
       <module name="consul-provider" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
+      <module name="openfeign" options="-parameters" />
+      <module name="openfreign1" options="-parameters" />
       <module name="provider" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>
