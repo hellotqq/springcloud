@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/stream/pom.xml" />
         <option value="$PROJECT_DIR$/sleuth/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin01/pom.xml" />
+        <option value="$PROJECT_DIR$/zipkin02/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

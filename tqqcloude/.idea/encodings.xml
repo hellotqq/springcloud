@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/provider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sleuth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul/src/main/java" charset="UTF-8" />
   </component>
 </project>
