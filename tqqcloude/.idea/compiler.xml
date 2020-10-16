@@ -6,18 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consul-provider" />
-        <module name="openfreign1" />
-        <module name="commons" />
-        <module name="provider" />
-        <module name="gateway" />
-        <module name="eureka" />
-        <module name="hystrix" />
-        <module name="consul-consumer" />
-        <module name="resilience4j" />
-        <module name="zuul" />
-        <module name="consumer" />
         <module name="hello-api" />
+        <module name="config-server" />
+        <module name="openfreign1" />
+        <module name="stream" />
+        <module name="gateway" />
+        <module name="sleuth" />
+        <module name="zuul" />
+        <module name="resilience4j" />
+        <module name="provider" />
+        <module name="hystrix" />
+        <module name="consul-provider" />
+        <module name="config-client" />
+        <module name="commons" />
+        <module name="eureka" />
+        <module name="consumer" />
+        <module name="consul-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +30,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="consul-consumer" options="-parameters" />
       <module name="consul-provider" options="-parameters" />
       <module name="consumer" options="-parameters" />
@@ -35,6 +41,8 @@
       <module name="openfeign" options="-parameters" />
       <module name="openfreign1" options="-parameters" />
       <module name="provider" options="-parameters" />
+      <module name="sleuth" options="-parameters" />
+      <module name="stream" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
