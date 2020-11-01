@@ -6,24 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hello-api" />
-        <module name="config-server" />
-        <module name="openfreign1" />
         <module name="stream" />
+        <module name="config-server" />
+        <module name="sleuth" />
+        <module name="openfreign1" />
+        <module name="eureka" />
         <module name="zipkin02" />
         <module name="gateway" />
         <module name="zipkin01" />
-        <module name="sleuth" />
         <module name="zuul" />
         <module name="resilience4j" />
         <module name="provider" />
+        <module name="nacos01" />
         <module name="hystrix" />
         <module name="consul-provider" />
+        <module name="sentinel" />
         <module name="config-client" />
         <module name="commons" />
-        <module name="eureka" />
+        <module name="hello-api" />
         <module name="consumer" />
+        <module name="nacos" />
+        <module name="nacos02" />
         <module name="consul-consumer" />
+        <module name="nacos01-2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,9 +45,14 @@
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
+      <module name="nacos" options="-parameters" />
+      <module name="nacos01" options="-parameters" />
+      <module name="nacos01-2" options="-parameters" />
+      <module name="nacos02" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="openfreign1" options="-parameters" />
       <module name="provider" options="-parameters" />
+      <module name="sentinel" options="-parameters" />
       <module name="sleuth" options="-parameters" />
       <module name="stream" options="-parameters" />
       <module name="zipkin01" options="-parameters" />
