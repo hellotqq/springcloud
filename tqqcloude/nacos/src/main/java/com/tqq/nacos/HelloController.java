@@ -18,6 +18,7 @@ public class HelloController {
 
     @GetMapping("/hello")
    public String hello(){
+        System.out.println(name);
         return name;
     }
 }
